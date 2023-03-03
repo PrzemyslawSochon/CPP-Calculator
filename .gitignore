@@ -1,8 +1,12 @@
-# Build tools generated files
+# Build tool generated files
 build/*
 
 # Machine specific files
 .vscode/vs-cpp-template.code-workspace
+
+# Local script files
+scripts/gitgud.sh
+script/source-tree.sh
 
 # Prerequisites
 *.d
