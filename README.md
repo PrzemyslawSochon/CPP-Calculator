@@ -11,13 +11,13 @@
 * [Features](#Features)
   * [Build](#Build)
   * [Application](#Application)
-      * [Prompts]
-      * [Standardization]
-      * [Solution]
+      * <b>Prompts</b>
+      * <b>Standardization</b>
+      * <b>Solution</b>
 * [Development](#Development)
   * [Contribution](#Contribution)
   * [Platform](#Platform) 
-* [About] (#About)
+* [About](#About)
 
 ---
 
