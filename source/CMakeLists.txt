@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.20)
 # to make sure that you're running ninja, use `cmake -GNinja`
 set(CMAKE_GENERATOR "Ninja")
 
-project(Template VERSION 1.0)
+project(Calculator VERSION 0.7)
 
 # project supports C++2017 and above
 # to specify version run `-DCPP_VERSION_TEST_CXX_STANDARD=20`
@@ -40,15 +40,14 @@ target_compile_options(compiler_flags INTERFACE
 add_subdirectory(cpp-version-test)
 add_subdirectory(equation-standard)
 add_subdirectory(equation-solution)
-add_subdirectory(file-stream)
 add_subdirectory(gui)
 
-add_executable(Template main.cpp shared.cpp)
+add_executable(Calculator main.cpp shared.cpp)
 
-target_link_libraries(Template PUBLIC compiler_flags EquationStandard EquationSolution FileStream CalculatorGui)
+target_link_libraries(Calculator PUBLIC compiler_flags EquationStandard EquationSolution CalculatorGui)
 
-target_include_directories(Template PUBLIC
+target_include_directories(Calculator PUBLIC
     "${PROJECT_BINARY_DIR}"
 )
 
-set_target_properties(Template PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../binary")
+set_target_properties(Calculator PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../binary")
