@@ -29,8 +29,9 @@ set(CMAKE_CXX_COMPILER /usr/bin/clang++)
 set(CMAKE_CXX_CLANG_TIDY 
   clang-tidy
   -header-filter=.;
-  -checks=*,-readability-identifier-naming,-misc-comments,-readability-function-cognitive-complexity;
-  -fix;)
+  -checks=*;;
+  -fix;
+  -config='{CheckOptions: [ {key: readability-identifier-naming.Enabled, value: false}, {key: misc-comments.Enabled, value: false}, {key: readability-function-cognitive-complexity.Enabled, value: false} ] }')
 
 
 add_library(compiler_flags INTERFACE)
