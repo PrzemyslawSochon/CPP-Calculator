@@ -27,9 +27,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_C_COMPILER /usr/bin/clang)
 set(CMAKE_CXX_COMPILER /usr/bin/clang++)
 set(CMAKE_CXX_CLANG_TIDY 
-  clang-tidy;
+  clang-tidy
   -header-filter=.;
-  -checks=*,-readability-identifier-naming,-misc-comments;
+  -checks=*,-readability-identifier-naming,-misc-comments,-readability-function-cognitive-complexity;
   -fix;)
 
 
