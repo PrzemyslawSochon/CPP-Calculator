@@ -11,9 +11,9 @@
 * [Features](#Features)
   * [Build](#Build)
   * [Application](#Application)
-      * <b>Prompts</b>
-      * <b>Standardization</b>
-      * <b>Solution</b>
+      * Prompts
+      * Standardization
+      * Solution
 * [Development](#Development)
   * [Contribution](#Contribution)
   * [Platform](#Platform) 
