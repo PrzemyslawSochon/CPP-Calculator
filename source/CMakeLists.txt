@@ -27,12 +27,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_C_COMPILER /usr/bin/clang)
 set(CMAKE_CXX_COMPILER /usr/bin/clang++)
 set(CMAKE_CXX_CLANG_TIDY 
-  clang-tidy
-  -header-filter=.;
-  -checks=*;;
-  -fix;
-  -config='{CheckOptions: [ {key: readability-identifier-naming.Enabled, value: false}, {key: misc-comments.Enabled, value: false}, {key: readability-function-cognitive-complexity.Enabled, value: false} ] }')
-
+clang-tidy;
+-header-filter=.;
+-checks=misc-const-correctness,misc-definitions-in-headers,misc-redundant-expression,misc-static-assert,misc-uniqueptr-reset-release,misc-unused-alias-decls,misc-unused-parameters,misc-unused-using-decls,modernize-avoid-bind,modernize-concat-nested-namespaces,modernize-deprecated-headers,modernize-deprecated-ios-base-aliases,modernize-loop-convert,modernize-macro-to-enum,modernize-make-shared,modernize-make-unique,modernize-pass-by-value,modernize-raw-string-literal,modernize-redundant-void-arg,modernize-replace-auto-ptr,modernize-replace-disallow-copy-and-assign-macro,modernize-replace-random-shuffle,modernize-return-braced-init-list,modernize-shrink-to-fit,modernize-unary-static-assert,modernize-use-auto,modernize-use-bool-literals,modernize-use-default-member-init,modernize-use-emplace,modernize-use-equals-default,modernize-use-equals-delete,modernize-use-nodiscard,modernize-use-noexcept,modernize-use-nullptr,modernize-use-override,modernize-use-trailing-return-type,modernize-use-transparent-functors,modernize-use-uncaught-exceptions,mpi-buffer-deref,mpi-type-mismatch,objc-assert-equals,objc-nsinvocation-argument-lifetime,objc-property-declaration,objc-super-self,performance-faster-string-find,performance-for-range-copy,performance-inefficient-algorithm,performance-inefficient-vector-operation,performance-move-const-arg,performance-noexcept-move-constructor,performance-trivially-destructible,performance-type-promotion-in-math-fn,performance-unnecessary-copy-initialization,performance-unnecessary-value-param,portability-restrict-system-includes;
+-fix;
+)
 
 add_library(compiler_flags INTERFACE)
 target_compile_features(compiler_flags INTERFACE cxx_std_17)
