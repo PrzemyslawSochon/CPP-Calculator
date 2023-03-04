@@ -88,7 +88,7 @@ void modifyConfigFile(std::string_view key, bool setting)
 
 void toggleConfig(std::string_view key, bool &setting)
 {
-    setting = 1;
+    setting = !setting;
 
     auto onYesClicked = [key, setting]()
     {
