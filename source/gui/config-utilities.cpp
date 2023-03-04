@@ -18,8 +18,8 @@ std::unordered_map<std::string, Percent> stringToPercent{
 
 void setDefaultConfigValues()
 {
-    g_verbose_terminal_prompts = false;
-    g_automatically_fix_errors = false;
+    g_verbose_terminal_prompts = true;
+    g_automatically_fix_errors = true;
     g_treat_percent_sign_as = Percent::decimal;
 }
 
