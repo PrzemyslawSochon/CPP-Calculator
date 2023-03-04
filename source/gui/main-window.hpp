@@ -2,7 +2,6 @@
 
 #include <QMainWindow>
 
-void badInputDialog();
 
 namespace Ui
 {

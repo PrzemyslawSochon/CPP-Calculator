@@ -6,20 +6,13 @@
 #include "../equation-standard/equation.hpp"
 #include "../equation-solution/solve.hpp"
 
+#include "config-utilities.hpp"
 #include "confirmation-dialog.hpp"
 #include "config-window.hpp"
 #include "main-window.hpp"
 #include "./ui_main-window.h"
 
 #include <iostream>
-
-void badInputDialog()
-{
-    QString message{
-        "Bad input!\n"};
-    ConfirmationDialog dialog(message);
-    dialog.exec();
-}
 
 // Holds current value of calculation
 std::string calculation_result{"0"};
@@ -91,7 +84,6 @@ void MainWindow::equalButtonPressed()
     // Get value from display
     QString displayedValue{ui->Display->text()};
     std::string userEquation{displayedValue.toStdString()};
-    std::cout << "This part needs a module to calculate the equation!\n";
      if(isUserInputBrokenBeyondAutoRepair(userEquation))
      {
          badInputDialog();
