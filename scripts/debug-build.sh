@@ -1,3 +1,4 @@
+mkdir -p ../build
 cd ../build
 echo "$0: Changed to build directory"
 rm -rf *
