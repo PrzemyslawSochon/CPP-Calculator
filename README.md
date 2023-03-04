@@ -1,6 +1,6 @@
 # Calculator with a story
 ---
-<a href="calculator screenshot"><img src="https://raw.githubusercontent.com/PrzemyslawSochon/CPP-Calculator/507d87622c1e3c90184ee33064c58eb24e08ad17/CALCULATOR.png" align="middle" width="100" height="50"></a>
+<a href="calculator screenshot"><img src="https://raw.githubusercontent.com/PrzemyslawSochon/CPP-Calculator/507d87622c1e3c90184ee33064c58eb24e08ad17/CALCULATOR.png" align="middle"></a>
 ---
 > ## Table of Contents
 
