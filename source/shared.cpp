@@ -2,6 +2,7 @@
 
 void removeTrailingZeros(std::string &str)
 {
+    std::replace(str.begin(), str.end(), ',', '.');
     std::size_t decimal_position = str.find('.');
     if (decimal_position == std::string::npos)
     {
