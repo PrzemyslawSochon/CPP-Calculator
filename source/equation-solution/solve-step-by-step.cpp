@@ -32,7 +32,7 @@ std::string copyValueFromRight(std::size_t pos, std::string str) {
   return "";
 }
 
-double calculate(SingleExpression expr) {
+double calculate(const SingleExpression& expr) {
 
   double leftOperand{std::stod(expr.leftOperand)};
   double rightOperand{std::stod(expr.rightOperand)};

@@ -1,5 +1,6 @@
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+find_package(nlohmann_json 3.11.2 REQUIRED)
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 
 file(GLOB_RECURSE SRC_FILES "*.cpp")
@@ -17,9 +18,10 @@ qt6_wrap_ui(UI_HEADERS ${UI_FILES})
 
 add_library(CalculatorGui SHARED ${SRC_FILES} ${HDR_FILES} ${UI_FILES})
 
-target_include_directories(FileStream INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+target_include_directories(CalculatorGui INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>)
 
+target_link_libraries(CalculatorGui PUBLIC nlohmann_json::nlohmann_json)
 target_link_libraries(CalculatorGui PRIVATE EquationSolution)
 target_link_libraries(CalculatorGui PRIVATE EquationStandard)
 target_link_libraries(CalculatorGui PUBLIC compiler_flags)
