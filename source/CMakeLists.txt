@@ -26,6 +26,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Set up the Clang compiler
 set(CMAKE_C_COMPILER /usr/bin/clang)
 set(CMAKE_CXX_COMPILER /usr/bin/clang++)
+set(CMAKE_CXX_CLANG_TIDY 
+  clang-tidy;
+  -header-filter=.;
+  -checks=*;)
+
 
 add_library(compiler_flags INTERFACE)
 target_compile_features(compiler_flags INTERFACE cxx_std_17)
