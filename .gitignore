@@ -40,3 +40,4 @@ script/source-tree.sh
 *.exe
 *.out
 *.app
+binary/*
