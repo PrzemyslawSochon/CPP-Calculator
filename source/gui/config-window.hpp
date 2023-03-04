@@ -4,14 +4,6 @@
 #include <QDialog>
 #include <QSettings>
 
-enum Percent
-{
-decimal,
-modulo,
-
-max
-};
-
 namespace Ui
 {
     class ConfigWindow;
