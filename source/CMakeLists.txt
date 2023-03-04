@@ -29,7 +29,8 @@ set(CMAKE_CXX_COMPILER /usr/bin/clang++)
 set(CMAKE_CXX_CLANG_TIDY 
   clang-tidy;
   -header-filter=.;
-  -checks=*;)
+  -checks=*,-readability-identifier-naming,-misc-comments;
+  -fix;)
 
 
 add_library(compiler_flags INTERFACE)
