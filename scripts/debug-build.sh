@@ -6,8 +6,8 @@ set -x
 cmake -DCPP_VERSION_TEST_CXX_STANDARD="20" -GNinja ../source
 set +x
 echo "$0: Running CMake"
-touch build.log
-ninja > build.log
+touch debug.log
+ninja > debug.log
 echo "$0: Running build"
 cd ../scripts
 echo "$0: Returned to scripts folder"
