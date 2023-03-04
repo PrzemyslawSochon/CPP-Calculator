@@ -1,3 +1,5 @@
+#include "../shared.hpp"
+
 #include "config-window.hpp"
 #include "./ui_config-window.h"
 
