@@ -1,4 +1,5 @@
 #include "../shared.hpp"
+#include "../gui/config-utilities.hpp"
 #include "equation.hpp"
 #include <vector>
 
@@ -30,10 +31,10 @@ void trimRedundantPluses(std::string &str)
         }
     }
 
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Trimmed redundant pluses.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Trimmed redundant pluses.\n";
+     }
 }
 
 void simplifyDoubleSigns(std::string &str)
@@ -60,10 +61,10 @@ void simplifyDoubleSigns(std::string &str)
         }
     }
 
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Simplified pluses and minuses.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Simplified pluses and minuses.\n";
+     }
 }
 
 void treatSymbolsNextToBracketAsMultiplication(std::string &str)
@@ -81,10 +82,10 @@ void treatSymbolsNextToBracketAsMultiplication(std::string &str)
             ++i;
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Handled adjacent symbols to parenthesis.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Handled adjacent symbols to parenthesis.\n";
+     }
 }
 
 void replaceAsterisksWithCarets(std::string &str)
@@ -98,10 +99,10 @@ void replaceAsterisksWithCarets(std::string &str)
             --i;
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Replaced all of double asterisks `**` with caret signs `^`.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Replaced all of double asterisks `**` with caret signs `^`.\n";
+     }
 }
 
 void replaceCommasWithPeriods(std::string &str)
@@ -115,10 +116,10 @@ void replaceCommasWithPeriods(std::string &str)
             str.insert(i, ".");
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Swapped all occurrences of commas `,` to dots `.`\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Swapped all occurrences of commas `,` to dots `.`\n";
+     }
 }
 
 void standardizeBrackets(std::string &str)
@@ -136,10 +137,10 @@ void standardizeBrackets(std::string &str)
             str.insert(i, ")");
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Replaced all occurrences of bracket `[]` `{}` with parenthesis `()`\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Replaced all occurrences of bracket `[]` `{}` with parenthesis `()`\n";
+     }
 }
 
 void replaceBackslashWithForwardSlash(std::string &str)
@@ -152,10 +153,10 @@ void replaceBackslashWithForwardSlash(std::string &str)
             str.insert(i, "/");
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Swapped all occurrences of backward slashes `\\` to forward slashes `/`.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Swapped all occurrences of backward slashes `\\` to forward slashes `/`.\n";
+     }
 }
 
 void treatPercentAsDivisionByOneHundred(std::string &str)
@@ -169,10 +170,10 @@ void treatPercentAsDivisionByOneHundred(std::string &str)
             i = i + 3;
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Replaced percent sign with /100.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Replaced percent sign with /100.\n";
+     }
 }
 
 void treatPercentAsDivisionWithRemainder(std::string &str)
@@ -192,24 +193,24 @@ void autoRepairUserInput(std::string &str)
     standardizeBrackets(str);
     replaceBackslashWithForwardSlash(str);
 
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "End of auto repair\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "End of auto repair\n";
+     }
 }
 
-// void parseUserInput(std::string &str)
-// {
-//     if (g_treat_percent_sign_as == Percent::decimal)
-//     {
-//         treatPercentAsDivisionByOneHundred(str);
-//     }
-//     if (!g_automatically_fix_errors && doesUserInputNeedAutoRepair(str))
-//     {
-//         askUserToHandleBadInput();
-//     }
-//     autoRepairUserInput(str);
-// }
+ void parseUserInput(std::string &str)
+ {
+     if (g_treat_percent_sign_as == Percent::decimal)
+     {
+         treatPercentAsDivisionByOneHundred(str);
+     }
+     if (!g_automatically_fix_errors && doesUserInputNeedAutoRepair(str))
+     {
+         askUserToHandleBadInput();
+     }
+     autoRepairUserInput(str);
+ }
 
 void filterInvalidChars(std::string &str)
 {
@@ -221,8 +222,8 @@ void filterInvalidChars(std::string &str)
             --i;
         }
     }
-    // if (g_verbose_terminal_prompts)
-    // {
-    //     std::cout << "Filtered unsupported characters.\n";
-    // }
+     if (g_verbose_terminal_prompts)
+     {
+         std::cout << "Filtered unsupported characters.\n";
+     }
 }
