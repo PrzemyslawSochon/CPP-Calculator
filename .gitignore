@@ -5,6 +5,8 @@ binary
 
 # Local script files
 scripts/*
+!scripts/installation.sh
+!scripts/debug-build-run.sh
 
 # Machine specific files
 .vscode/*

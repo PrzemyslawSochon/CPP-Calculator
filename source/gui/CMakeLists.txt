@@ -6,6 +6,8 @@ find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 file(GLOB_RECURSE SRC_FILES "*.cpp")
 file(GLOB_RECURSE HDR_FILES "*.hpp")
 
+file(GLOB_RECURSE JSON_FILES "*.json")
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -16,7 +18,7 @@ file(GLOB UI_FILES *.ui)
 # Generate .h files from .ui files
 qt6_wrap_ui(UI_HEADERS ${UI_FILES})
 
-add_library(CalculatorGui SHARED ${SRC_FILES} ${HDR_FILES} ${UI_FILES})
+add_library(CalculatorGui SHARED ${SRC_FILES} ${HDR_FILES} ${JSON_FILES} ${UI_FILES})
 
 target_include_directories(CalculatorGui INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>)
