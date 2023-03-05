@@ -82,15 +82,25 @@ As you might've noticed I'm still learning. You're welcome to request pushes and
 
 ### Platform
 
-Project was developed on the Arch Linux, using the following:
+The project was developed on the Arch Linux.  
+I work with and really recommend the following:
 
-GNU GCC
-Clang LLVM
-CMake
-ninja build
-VS Code
-Qt Creator
+* <a href="https://archlinux.org/packages/extra/x86_64/clang/">Clang LLVM compiler</a>
+* <a href="https://archlinux.org/packages/extra/x86_64/cmake/">CMake software for build automation</a>
+* <a href="https://archlinux.org/packages/community/x86_64/ninja/">Ninja build tools</a>
+* <a href="https://archlinux.org/groups/x86_64/qt/">Qt Framework</a>
 
 ## About
 
-(Soon™)
+### Contact
+
+I'm actively looking for a job: przemyslaw.sochon@gmail.com
+
+### Credits
+
+My wallpaper: Forum Romanum, Rome, Italy. Photo by <a href="https://unsplash.com/@alyspara">Faith Crabtree</a> on <a href="https://unsplash.com/license">Unsplash</a>  
+Terminal emulator: <a href="https://github.com/alacritty/alacritty">Alacritty</a>
+
+## License
+
+<a href="https://github.com/PrzemyslawSochon/CPP-Calculator/blob/main/LICENSE">MIT License</a>
