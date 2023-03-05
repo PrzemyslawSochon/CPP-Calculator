@@ -6,12 +6,11 @@
 
 * [Synopsis](#Synopsis)
 * [Requirements](#Requirements)
-* [Installation](#Structure-of-a-readme)
-* [Tests](#Tests)
+* [Build](#Build)
+  * [Installation](#Structure-of-a-readme)
+  * [Tests](#Tests)
 * [Download](#Downloads)
 * [Features](#Features)
-  * [Build](#Build)
-  * [Application](#Application)
       * Prompts
       * Standardization
       * Solution
@@ -32,41 +31,41 @@ Despite this repo being reserved for a job recruitment purposes, I've decided to
 Operating system:
 Linux (Debian-based or Arch-based)
 
-## Installation
+## Build
+To build project use CMake and a build system of your choice.  
+You can also run tested script inside <code>scripts/debug-build-run.sh</code>
+
+The default variant of the build is Release. You can run Debug release by changing variable in the top CMakeLists.txt `CMAKE_BUILD_TYPE` to Debug  
+or by running CMake command with <code>-DCMAKE_BUILD_TYPE=Debug</code> argument.
+
+The default C++ standard is set to 2020. You can build the project either with that or 2017 standard. I have no plans of supporting other versions in the near future.  
+Analogically, to change language standard tweak <code>CPP_VERSION_TEST_CXX_STANDARD</code>
+
+### Installation
+
+The installation takes about 2MB of storage. If successful, you can find it inside <code>/usr/local/bin/</code>  
+To install the program, run installation script from <code>/scripts/installation.sh</code>
+
+### Tests
 
 (Soon™)
 
-## Tests
+## Download
 
 (Sooner™)
 
-## Download
-
-<a href="https://github.com/PrzemyslawSochon/CPP-Calculator/raw/main/binary/Calculator">Download compiled binary file</a>
-
 ## Features
 
-### Build
-You can build the project either with C++2017 or C++2020 standard. I have no plans of supporting other versions in the near future.
-Usage: cmake -DCPP_VERSION_TEST_CXX_STANDARD="version number" <path/to/source>
-
-Allowed values are following string literals: 17, 20, 23, 2017, 2020, 2023
-Setting version to 2023 will set the CMake to build it with 2020 version, for compatibility sake.
-
-To build project use CMake and build system of your choice.
-You can also run tested scripts/debug-build.sh to make sure everything goes smooth.
-
-### Application
-<b>Prompts</b>
+### Prompts
 
 You get nice verbose outputs to shell about what tasks calculator is performing and how it handles every equation step by step. To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
 
-<b>Standardization</b>
+### Standardization
 
 You might expect that something fundamental as mathematics, after thousands of years of existence, would have developed into universal language with uniform symbols ant their interpretation. While it's true to some extent, I found awfully lot of irregularities in plain tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat dash as minus, or is it separate symbol? How about periods and commas? And brackets? Should parenthesis be only allowed to dictate the order of operations or do we want live in friendly, inclusive math world when you can throw braces and chevrons as well?
 I'm not sure, so I'm leaving it up to you, my dear user, with sleek menu instructing calculator how should it behave. (You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
 
-<b>Solution</b>
+### Solution
 
 (Soon™)
 
