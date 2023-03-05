@@ -67,9 +67,10 @@ To turn them off, open Settings in GUI. (But don't do that, I put them there for
 
 ### Standardization
 
-After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation. While it's true to some extent, I found a lot of irregularities in straightforward tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
-I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu, you can choose how the calculator should perform some of its tasks.  
-(You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
+After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language that everyone uses in the same way. But no, it's humanity lore and simplicity is forbidden here.  
+Does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
+With a sleek menu, you can choose how the calculator should perform some of its tasks.  
+(You can't actually throw bitwise operation in the middle of arithmetic equation).
 
 ### Solution
 
