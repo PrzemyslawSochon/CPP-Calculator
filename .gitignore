@@ -5,7 +5,8 @@ build/*
 scripts/*
 
 # Machine specific files
-.vscode/vs-cpp-template.code-workspace
+.vscode/*
+.vscode
 
 # Prerequisites
 *.d
