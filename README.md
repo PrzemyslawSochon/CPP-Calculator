@@ -16,15 +16,18 @@
       * Solution
 * [Development](#Development)
   * [Contribution](#Contribution)
-  * [Platform](#Platform) 
+  * [Platform](#Platform)
 * [About](#About)
+  * [Contact](#Contact)
+  * [Credits](#Credits)
+* [License](#License)
 
 ---
 
 
 ## Synopsis
-This project taught me how unrealistic expectations I had about learning C++. Something that looks fairly simple caused me much trouble. While, I really enjoyed studying C++ itself, the integration of tools and technologies surrounding it proved me a great challenge.
-Despite this repo being reserved for a job recruitment purposes, I've decided to leave this note just to see how may I reflect upon this lovely origin story in the future.
+This project taught me how unrealistic expectations I had about learning C++. Something that looks quite simple caused me much trouble. Overall, I enjoyed studying C++ itself. The integration of tools and technologies surrounding it proved me a challenge.
+Despite the fact that this repo was made for a job recruitment purposes, I've decided to leave this note to see how I may reflect upon this lovely origin story in the future.
 
 ## Requirements
 
@@ -58,12 +61,14 @@ To install the program, run installation script from <code>/scripts/installation
 
 ### Prompts
 
-You get nice verbose outputs to shell about what tasks calculator is performing and how it handles every equation step by step. To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
+By default, you get nice verbose outputs to shell describing what calculator is doing at the moment.  
+To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
 
 ### Standardization
 
-You might expect that something fundamental as mathematics, after thousands of years of existence, would have developed into universal language with uniform symbols ant their interpretation. While it's true to some extent, I found awfully lot of irregularities in plain tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat dash as minus, or is it separate symbol? How about periods and commas? And brackets? Should parenthesis be only allowed to dictate the order of operations or do we want live in friendly, inclusive math world when you can throw braces and chevrons as well?
-I'm not sure, so I'm leaving it up to you, my dear user, with sleek menu instructing calculator how should it behave. (You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
+After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation. While it's true to some extent, I found a lot of irregularities in straightforward tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
+I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu, you can choose how the calculator should perform some of its tasks.  
+(You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
 
 ### Solution
 
@@ -73,19 +78,29 @@ I'm not sure, so I'm leaving it up to you, my dear user, with sleek menu instruc
 
 ### Contribution
 
-As you might've noticed I'm still learning. You're welcome to request pushes and share feedback.
+I'm a total beginner. Feel free to leave feedback and request pushes.
 
 ### Platform
 
-Project was developed on the Arch Linux, using the following:
+The project was developed on the Arch Linux.  
+I work with and really recommend the following:
 
-GNU GCC
-Clang LLVM
-CMake
-ninja build
-VS Code
-Qt Creator
+* <a href="https://archlinux.org/packages/extra/x86_64/clang/">Clang LLVM compiler</a>
+* <a href="https://archlinux.org/packages/extra/x86_64/cmake/">CMake software for build automation</a>
+* <a href="https://archlinux.org/packages/community/x86_64/ninja/">Ninja build tools</a>
+* <a href="https://archlinux.org/groups/x86_64/qt/">Qt Framework</a>
 
 ## About
 
-(Soon™)
+### Contact
+
+I'm actively looking for a job: przemyslaw.sochon@gmail.com
+
+### Credits
+
+My wallpaper: Forum Romanum, Rome, Italy. Photo by <a href="https://unsplash.com/@alyspara">Faith Crabtree</a> on <a href="https://unsplash.com/license">Unsplash</a>  
+Terminal emulator: <a href="https://github.com/alacritty/alacritty">Alacritty</a>
+
+## License
+
+<a href="https://github.com/PrzemyslawSochon/CPP-Calculator/blob/main/LICENSE">MIT License</a>
