@@ -1,12 +1,11 @@
 # Build tool generated files
 build/*
 
-# Machine specific files
-.vscode/vs-cpp-template.code-workspace
-
 # Local script files
 scripts/*
-!scripts/debug-build-run.sh
+
+# Machine specific files
+.vscode/vs-cpp-template.code-workspace
 
 # Prerequisites
 *.d
