@@ -19,13 +19,16 @@
   * [Contribution](#Contribution)
   * [Platform](#Platform) 
 * [About](#About)
+  * [Contact](#Contact)
+  * [Credits](#Credits)
+* [License](#License)
 
 ---
 
 
 ## Synopsis
-This project taught me how unrealistic expectations I had about learning C++. Something that looks fairly simple caused me much trouble. While, I really enjoyed studying C++ itself, the integration of tools and technologies surrounding it proved me a great challenge.
-Despite this repo being reserved for a job recruitment purposes, I've decided to leave this note just to see how may I reflect upon this lovely origin story in the future.
+This project taught me how unrealistic expectations I had about learning C++. Something that looks quite simple caused me much trouble. Overall, I enjoyed studying C++ itself. The integration of tools and technologies surrounding it proved me a challenge.
+Despite the fact that this repo was made for a job recruitment purposes, I've decided to leave this note to see how I may reflect upon this lovely origin story in the future.
 
 ## Requirements
 
@@ -48,7 +51,7 @@ Linux (Debian-based or Arch-based)
 
 ### Build
 You can build the project either with C++2017 or C++2020 standard. I have no plans of supporting other versions in the near future.
-Usage: cmake -DCPP_VERSION_TEST_CXX_STANDARD="version number" <path/to/source>
+Usage: <code>cmake [-DCPP_VERSION_TEST_CXX_STANDARD="version number"] [<path/to/source>]</code>
 
 Allowed values are following string literals: 17, 20, 23, 2017, 2020, 2023
 Setting version to 2023 will set the CMake to build it with 2020 version, for compatibility sake.
