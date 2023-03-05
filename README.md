@@ -39,7 +39,9 @@ To build project use CMake and a build system of your choice.
 You can also run tested script inside <code>scripts/debug-build-run.sh</code>
 
 The default variant of the build is Release. You can run Debug release by changing variable in the top CMakeLists.txt `CMAKE_BUILD_TYPE` to Debug  
-or by running CMake command with <code>-DCMAKE_BUILD_TYPE=Debug</code> argument.
+or by running CMake command with <code>-DCMAKE_BUILD_TYPE=Debug</code> argument.  
+  
+Debug variant will considerably slow down build process, by running clang-tidy!
 
 The default C++ standard is set to 2020. You can build the project either with that or 2017 standard. I have no plans of supporting other versions in the near future.  
 Analogically, to change language standard tweak <code>CPP_VERSION_TEST_CXX_STANDARD</code>
@@ -66,8 +68,9 @@ To turn them off, open Settings in GUI. (But don't do that, I put them there for
 
 ### Standardization
 
-After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation. While it's true to some extent, I found a lot of irregularities in straightforward tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
-I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu, you can choose how the calculator should perform some of its tasks.  
+After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation.  
+Nah, simplicity is banned in humanity lore. Does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
+With a sleek menu, you can choose how the calculator should perform some of its tasks.  
 (You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
 
 ### Solution
