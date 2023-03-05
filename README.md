@@ -7,13 +7,13 @@
 * [Synopsis](#Synopsis)
 * [Requirements](#Requirements)
 * [Build](#Build)
-  * [Installation](#Structure-of-a-readme)
+  * [Installation](#Installation)
   * [Tests](#Tests)
 * [Download](#Downloads)
 * [Features](#Features)
-      * Prompts
-      * Standardization
-      * Solution
+    * [Prompts](#Prompts)
+    * [Standardization](#Standardization)
+    * [Solution](#Solution)
 * [Development](#Development)
   * [Contribution](#Contribution)
   * [Platform](#Platform)
