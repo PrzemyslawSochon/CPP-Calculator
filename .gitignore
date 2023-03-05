@@ -1,5 +1,7 @@
 # Build tool generated files
 build/*
+binary/*
+binary
 
 # Local script files
 scripts/*
