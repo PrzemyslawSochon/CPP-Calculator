@@ -78,7 +78,7 @@ I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu,
 
 ### Contribution
 
-As you might've noticed I'm still learning. You're welcome to request pushes and share feedback.
+I'm a total beginner. Feel free to leave feedback and request pushes.
 
 ### Platform
 
