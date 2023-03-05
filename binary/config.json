@@ -1,5 +1,0 @@
-{
-    "Automatically fix user input errors": false,
-    "Show debug prompts in terminal": false,
-    "Treat percent sign as": "decimal"
-}
