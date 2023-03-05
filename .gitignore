@@ -5,8 +5,8 @@ build/*
 .vscode/vs-cpp-template.code-workspace
 
 # Local script files
-scripts/gitgud.sh
-script/source-tree.sh
+scripts/*
+!scripts/debug-build-run.sh
 
 # Prerequisites
 *.d
