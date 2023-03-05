@@ -10,8 +10,8 @@ echo "$0: Running CMake"
 touch debug.log
 ninja > debug.log
 echo "$0: Running build"
-cd ../binary
+echo "$0: Log file was saved to /build/debug.log"
 ./Calculator
-echo "$0: Run program"
+echo "$0: Running program"
 cd ../scripts
 echo "$0: Returned to scripts folder"
