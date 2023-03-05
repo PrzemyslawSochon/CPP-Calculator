@@ -51,23 +51,24 @@ Linux (Debian-based or Arch-based)
 
 ### Build
 You can build the project either with C++2017 or C++2020 standard. I have no plans of supporting other versions in the near future.
-Usage: <code>cmake [-DCPP_VERSION_TEST_CXX_STANDARD="version number"] [<path/to/source>]</code>
+Usage: <code>cmake [-DCPP_VERSION_TEST_CXX_STANDARD="version_number"] [<path/to/source>]</code>  
+["version_number"] allowed values: <code>17, 20, 23, 2017, 2020, 2023</code>
+Setting version to 2023 will successfully run the project, but with 2020 standard.  
 
-Allowed values are following string literals: 17, 20, 23, 2017, 2020, 2023
-Setting version to 2023 will set the CMake to build it with 2020 version, for compatibility sake.
-
-To build project use CMake and build system of your choice.
-You can also run tested scripts/debug-build.sh to make sure everything goes smooth.
+If you're not familiar with the commands above, you can refer to <code>/scripts</code> directory.  
+Make sure you've CMake and compatible build system beforehand.
 
 ### Application
 <b>Prompts</b>
 
-You get nice verbose outputs to shell about what tasks calculator is performing and how it handles every equation step by step. To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
+By default, you get nice verbose outputs to shell describing what calculator is doing at the moment.  
+To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
 
 <b>Standardization</b>
 
-You might expect that something fundamental as mathematics, after thousands of years of existence, would have developed into universal language with uniform symbols ant their interpretation. While it's true to some extent, I found awfully lot of irregularities in plain tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat dash as minus, or is it separate symbol? How about periods and commas? And brackets? Should parenthesis be only allowed to dictate the order of operations or do we want live in friendly, inclusive math world when you can throw braces and chevrons as well?
-I'm not sure, so I'm leaving it up to you, my dear user, with sleek menu instructing calculator how should it behave. (You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
+After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation. While it's true to some extent, I found a lot of irregularities in straightforward tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
+I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu, you can choose how the calculator should perform some of its tasks.  
+(You can't actually throw bitwise operation in the middle of arithmetic equation, it's nonsense.)
 
 <b>Solution</b>
 
