@@ -24,7 +24,6 @@
 
 ---
 
-
 ## Synopsis
 This project taught me how unrealistic expectations I had about learning C++. Something that looks quite simple caused me much trouble. Overall, I enjoyed studying C++ itself. The integration of tools and technologies surrounding it proved me a challenge.
 Despite the fact that this repo was made for a job recruitment purposes, I've decided to leave this note to see how I may reflect upon this lovely origin story in the future.
@@ -67,7 +66,6 @@ By default, you get nice verbose outputs to shell describing what calculator is 
 To turn them off, open Settings in GUI. (But don't do that, I put them there for a reason).
 
 ### Standardization
-
 
 After thousands of years, you might expect that something fundamental as mathematics, would have developed into a universal language with uniform symbols and their interpretation. While it's true to some extent, I found a lot of irregularities in straightforward tasks. For example, does `^` mean exponentiation or XOR bitwise operation? Should we treat a dash as a minus, or is it a separate symbol? How about periods and commas? And brackets? Should only parenthesis be allowed to dictate the order of operations, or do we want to live in a friendly, inclusive math world where you can throw braces and chevrons as well?  
 I don't know, so I'm leaving the choice to you, my dear user. With a sleek menu, you can choose how the calculator should perform some of its tasks.  

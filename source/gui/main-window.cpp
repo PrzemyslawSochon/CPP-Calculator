@@ -89,6 +89,8 @@ void MainWindow::equalButtonPressed()
          badInputDialog();
          return;
      }
+
+     // todo: switch to parseUserInput
      autoRepairUserInput(userEquation);
      solveEquation(userEquation);
      ui->Display->setText(QString::fromStdString(userEquation));

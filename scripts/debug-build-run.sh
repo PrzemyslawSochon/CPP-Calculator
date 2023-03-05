@@ -1,4 +1,6 @@
-mkdir -p ../build
+echo "$0: Thi script will build and run the project."
+echo "$0: Press any key to continue"
+read -k1
 cd ../build
 echo "$0: Changed to build directory"
 rm -rf *
@@ -14,6 +16,6 @@ echo "$0: Running build, saving log to /build/debug.log"
 cd ../binary
 echo "$0: Changed to binary directory"
 ./Calculator
-echo "$0: Running program"
+echo "$0: Running program from newly created binary folder"
 cd ../scripts
 echo "$0: Changed back to scripts folder"
