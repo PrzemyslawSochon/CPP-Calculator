@@ -94,10 +94,6 @@ I work with and really recommend the following:
 
 ## About
 
-### Contact
-
-I'm actively looking for a job: przemyslaw.sochon@gmail.com
-
 ### Credits
 
 My wallpaper: Forum Romanum, Rome, Italy. Photo by <a href="https://unsplash.com/@alyspara">Faith Crabtree</a> on <a href="https://unsplash.com/license">Unsplash</a>  
